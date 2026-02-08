@@ -1,0 +1,128 @@
+---
+---
+<section class="features">
+  <div class="container center-img">
+      <!-- User requested to replace the section displaying the truck icon with this specific image -->
+      <img src="/Desktop - 5 copy.png" alt="Features" class="features-img" />
+  </div>
+</section>
+
+<section class="testimonial">
+    <div class="container testimonial-container">
+        <div class="testimonial-image">
+            <img src="https://images.unsplash.com/photo-1534030347209-467a5b0dd3e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Customer" />
+            <div class="customer-name">Kuhaku</div>
+        </div>
+        <div class="testimonial-content">
+            <span class="section-subtitle text-white">Testimonial</span>
+            <h2 class="section-title text-white">Pelanggan Kami</h2>
+            <blockquote class="quote">
+                "Desainnya simpel tapi tetap kelihatan modern, mudah dipadu padan buat 
+                berbagai suasana. Setiap beli di Gaya Kita selalu puas sama hasilnya."
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="collaboration">
+    <div class="container">
+        <p class="collab-title">In Collaboration With</p>
+        <div class="logos">
+            <!-- Using text for logos as placeholders since no SVGs provided -->
+            <span class="brand-logo">CHANEL</span>
+            <span class="brand-logo">LOUIS VUITTON</span>
+            <span class="brand-logo">THE NORTH FACE</span>
+            <span class="brand-logo">ZARA</span>
+            <span class="brand-logo">Dior</span>
+            <span class="brand-logo">VERSACE</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .features {
+        padding: 50px 0;
+        text-align: center;
+        background-color: #fcfcfc;
+    }
+
+    .center-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .features-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Testimonial */
+    .testimonial {
+        background-color: #6d6052;
+        padding: 80px 0;
+        color: white;
+    }
+    
+    .testimonial-container {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .testimonial-image {
+        position: relative;
+        flex: 0 0 300px;
+    }
+    
+    .testimonial-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .customer-name {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .text-white {
+        color: white !important;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-top: 30px;
+        font-style: italic;
+    }
+
+    /* Collaboration */
+    .collaboration {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .collab-title {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 40px;
+        font-weight: 600;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        font-family: serif;
+        font-weight: bold;
+        color: #333;
+        font-size: 1.5rem;
+        opacity: 0.7;
+    }
+</style>

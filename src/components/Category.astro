@@ -1,0 +1,101 @@
+---
+---
+<section class="category">
+  <div class="container">
+    <div class="category-header">
+        <span class="section-subtitle">Category</span>
+        <h2 class="section-title">Our New Collection By <br>Category</h2>
+    </div>
+
+    <div class="category-grid">
+      <div class="category-item large-item bag">
+        <div class="category-label">Bag</div>
+      </div>
+      <div class="category-col">
+        <div class="category-item watch">
+             <div class="category-label">Watch</div>
+        </div>
+        <div class="category-item hat">
+             <div class="category-label">Hat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .category {
+    padding-bottom: 80px;
+    text-align: center;
+  }
+
+  .category-header {
+      margin-bottom: 40px;
+  }
+
+   .section-title {
+    font-size: 3.5rem;
+    color: #5d5348;
+  }
+
+  .category-grid {
+    display: flex;
+    gap: 20px;
+    height: 600px;
+  }
+
+  .category-item {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-item:hover {
+    transform: scale(1.05); /* Hover animation */
+    z-index: 2;
+  }
+
+  .large-item {
+      flex: 1;
+      height: 100%;
+  }
+
+  .category-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+       height: 100%;
+  }
+
+  .category-col .category-item {
+      height: 50%;
+      flex: unset;
+  }
+
+  /* Placeholders */
+  .bag {
+      background-image: url('/foto 3.png');
+  }
+  .watch {
+      background-image: url('/foto 3.png');
+  }
+  .hat {
+      background-image: url('/foto 3.png'); 
+  }
+
+  .category-label {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: white;
+      padding-bottom: 20px;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  }
+</style>

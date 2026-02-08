@@ -1,0 +1,207 @@
+---
+const products = [
+  {
+      name: "Kaos Oversize",
+      price: "Rp. 150.000",
+      image: "/foto model/Mask group-1.png"
+  },
+  {
+      name: "Jacket Semi Parka",
+      price: "Rp. 250.000",
+      image: "/foto model/Mask group.png" 
+  },
+  {
+      name: "Jacket",
+      price: "Rp. 250.000",
+      image: "/foto model/model1.png" 
+  },
+  {
+      name: "Turtleneck",
+      price: "Rp. 100.000",
+      image: "/foto model/model2.png"
+  }
+];
+---
+<section class="shop-promo">
+    <div class="promo-banner">
+        <div class="container promo-content">
+            <h2 class="promo-title">Gaya Kita</h2>
+            <p class="promo-desc">
+                Gaya Kita is a space to express yourself without limits. 
+                Discover outfits that truly represent who you are. 
+                Step into your confidence and define your own style story.
+            </p>
+            <a href="#" class="btn-outline">Visit Shop</a>
+        </div>
+        <div class="promo-bg"></div>
+    </div>
+
+    <div class="container collection-section">
+         <div class="collection-header">
+            <div class="header-left">
+                <span class="section-subtitle">Category</span>
+                <h2 class="section-title">Explore Our <br>Collection</h2>
+            </div>
+             <p class="collection-desc">
+                 Top picks curated to complete your style. A blend of the latest trends with 
+                 timeless fashion touches. Selected outfits designed to boost your confidence 
+                 in every moment. Find your new favorites and let your style speak for itself.
+             </p>
+         </div>
+
+         <div class="product-grid">
+             {products.map(product => (
+                 <div class="product-card">
+                     <div class="product-image">
+                         <img src={product.image} alt={product.name} />
+                     </div>
+                     <h3 class="product-name">{product.name}</h3>
+                     <p class="product-price">{product.price}</p>
+                 </div>
+             ))}
+         </div>
+
+         <div class="center-btn">
+             <a href="#" class="btn-brown">See All</a>
+         </div>
+    </div>
+</section>
+
+<style>
+    /* Promo Banner */
+    .promo-banner {
+        position: relative;
+        padding: 100px 0;
+        background-color: #111;
+        color: white;
+        overflow: hidden;
+    }
+    
+    .promo-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+    }
+
+    .promo-content {
+        position: relative;
+        z-index: 2;
+        width: 50%;
+    }
+
+    .promo-title {
+        font-family: var(--font-heading);
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .promo-desc {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        max-width: 450px;
+    }
+
+    .btn-outline {
+        display: inline-block;
+        padding: 10px 30px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    
+    .btn-outline:hover {
+        background: white;
+        color: black;
+    }
+
+    /* Collection Section */
+    .collection-section {
+        padding: 80px 20px;
+    }
+
+    .collection-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 50px;
+    }
+    
+    .header-left {
+        flex: 1;
+    }
+    
+    .collection-desc {
+        flex: 1;
+        font-size: 1rem;
+        color: var(--color-text-light);
+        line-height: 1.6;
+        padding-bottom: 10px;
+    }
+
+    .section-title {
+         font-size: 3.5rem;
+         font-family: var(--font-heading);
+         color: #6d6052;
+         line-height: 1.1;
+    }
+    
+    .section-subtitle {
+        color: #6d6052;
+        font-weight: bold;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .product-image {
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .product-image img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+    
+    .product-card:hover .product-image img {
+        transform: scale(1.05);
+    }
+
+    .product-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    .product-price {
+        color: #666;
+    }
+
+    .center-btn {
+        text-align: center;
+    }
+    
+    .btn-brown {
+         display: inline-block;
+         padding: 12px 40px;
+         background-color: #6d6052;
+         color: white;
+         border-radius: 50px;
+         font-weight: 600;
+    }
+</style>

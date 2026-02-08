@@ -1,0 +1,81 @@
+---
+---
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="container hero-content">
+    <h1 class="hero-title">Temukan Gaya<br>Fashion Favoritemu</h1>
+    <p class="hero-text">
+        Jelajahi koleksi pilihan yang dirancang untuk mengekspresikan gaya unikmu. 
+        Dari tampilan kasual hingga elegan, Gaya Kita hadir untuk melengkapi setiap 
+        langkah dan momenmu dengan percaya diri.
+    </p>
+    <div class="hero-buttons">
+      <a href="#" class="btn">Shop Now</a>
+      <a href="#" class="link-about">About Us</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    /* Using a cloth store/fashion background similar to the image */
+    background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay to make text readable */
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    padding-top: 100px; /* Offset for navbar */
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: var(--font-heading);
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-family: var(--font-body);
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .link-about {
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
+    font-size: 1.1rem;
+    color: #8b7355; /* Goldish color as seen in the image text */
+  }
+  
+  .link-about:hover {
+      border-bottom: 1px solid currentColor;
+  }
+</style>
