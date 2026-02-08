@@ -8,12 +8,11 @@
         Gaya Kita <span class="logo-sub">FASHION</span>
       </a>
     </div>
-    <ul class="nav-links">
-      <li><a href="#" class="active">HOME</a></li>
-      <li><a href="#">SHOP</a></li>
-      <li><a href="#">PRODUCT</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li><a href="#">FEATURES</a></li>
+      <li><a href="/" class={Astro.url.pathname === '/' ? 'active' : ''}>HOME</a></li>
+      <li><a href="/shop" class={Astro.url.pathname === '/shop' ? 'active' : ''}>SHOP</a></li>
+      <li><a href="/product" class={Astro.url.pathname === '/product' ? 'active' : ''}>PRODUCT</a></li>
+      <li><a href="/features" class={Astro.url.pathname === '/features' ? 'active' : ''}>FEATURES</a></li>
+      <li><a href="/contact" class={Astro.url.pathname === '/contact' ? 'active' : ''}>CONTACT</a></li>
     </ul>
     <div class="nav-icons">
       <a href="#" aria-label="Search">

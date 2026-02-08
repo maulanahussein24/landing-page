@@ -1,0 +1,41 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import NewArrival from '../components/NewArrival.astro';
+import Collection from '../components/Collection.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Navbar />
+  <div class="page-container">
+    <h1>Our Shop</h1>
+    <p>Explore our full collection of premium fashion items.</p>
+    <NewArrival />
+    <Collection />
+  </div>
+  <Footer />
+</Layout>
+
+<style>
+  .page-container {
+    padding-top: 100px; /* Space for fixed navbar */
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+</style>
