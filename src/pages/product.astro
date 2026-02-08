@@ -9,7 +9,7 @@ import Footer from '../components/Footer.astro';
   <div class="product-page">
     <div class="product-container">
       <div class="product-image">
-        <img src="/logo.png" alt="Product Image" />
+        <img src={import.meta.env.BASE_URL + "logo.png"} alt="Product Image" />
       </div>
       <div class="product-details">
         <h1>Premium Fashion Item</h1>

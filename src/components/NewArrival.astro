@@ -17,10 +17,13 @@ const products = [
 // 1. Woman with coat/hat
 // 2. Boots/legs
 // 3. Man with stripes - hard to find exact, using closest match fashion portraits
+// 2. Boots/legs
+// 3. Man with stripes - hard to find exact, using closest match fashion portraits
+const base = import.meta.env.BASE_URL;
 const newArrivals = [
-    "/foto 2 .png", // Fashion woman
-    "/foto 2 .png", // Boots close up
-    "/foto 2 .png"  // Man portrait
+    base + "foto 2 .png", // Fashion woman
+    base + "foto 2 .png", // Boots close up
+    base + "foto 2 .png"  // Man portrait
 ]
 ---
 <section class="new-arrival">
